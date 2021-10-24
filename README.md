@@ -4,4 +4,4 @@ Web development studies
 
 ## My Personal Website
 
-Click to visit the website -> https://personal-website-edd19.web.app/
+Click to visit the website (still in progress) -> https://personal-website-edd19.web.app/
