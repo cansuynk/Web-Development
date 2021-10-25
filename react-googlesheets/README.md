@@ -1,6 +1,9 @@
 ## Turn Google Sheets into a REST API and Use it with a React Application
 
-![webPage](images/webPage.PNG) -> ![sheet](images/sheet.PNG) 
+<p align="center">
+  <img height="200" src="images/webPage.PNG">
+  <img height="200" src="images/sheet.PNG">
+</p>
 
 Tutorial of the project -> https://dev.to/sagarbarapatre/how-to-turn-google-sheets-into-a-rest-api-and-use-it-with-a-react-application-1pbb
 
