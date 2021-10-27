@@ -6,6 +6,12 @@ Web development studies
 
 Click to visit the website --> https://personal-website-cy.web.app/
 
+
+## meeTitan Website
+
+Click to visit the website --> https://meet-titans.web.app/
+
+
 ## Turn Google Sheets into a REST API and Use it with a React Application
 <p align="center">
   <img height="200" src="react-googlesheets/images/webPage.PNG">
@@ -14,6 +20,4 @@ Click to visit the website --> https://personal-website-cy.web.app/
 </p>
 
 
-## meeTitan Website
 
-Click to visit the website --> https://meet-titans.web.app/
