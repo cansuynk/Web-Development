@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>meeTitan</title>
+    <!-- Bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Favawesome Icons-->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    
+    <!--Browser icon-->
+    <link rel="icon" href="images/Survey_Corps_Logo.png">
+
+    <!--Style sheet-->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <section id="title" class="first-colored-section">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href=""><strong>meeT</strong>itan</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#cta">Download</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>Meet new and interesting titans nearby.</h1>
+            <button
+              type="button"
+              class="btn btn-dark btn-lg download-button btn2"
+            >
+              <i class="fab fa-apple"></i> Download
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-light btn-lg download-button"
+            >
+              <i class="fab fa-google-play"></i> Download
+            </button>
+          </div>
+          <div class="col-lg-6 title-img-div">
+            <img
+              class="title-image"
+              src="images/iphone6.png"
+              alt="iphone-mockup"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+
+    <section id="features" class="second-colored-section">
+      <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-4 col-md features-col">
+          <img class="features-icon" src="images/sasha_icon.png" alt="sasha">
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even a mindless titan could do it.</p>
+        </div>
+        <div class="col-lg-4 col-md features-col">
+          <img class="features-icon" src="images/intelligent_titan.png" alt="intelligent_titan">
+          <h3>Intelligent Titans</h3>
+          <p>We have all the nine intelligent titans, the most powerful titans!</p>
+        </div>
+        <div class="col-lg-4 col-md features-col">
+          <img class="features-icon" src="images/mikasa_icon.png" alt="mikasa">
+          <h3>Guaranteed to work.</h3>
+          <p>Find your titan love or join the military (in order not to be eaten).</p>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- Testimonials -->
+
+    <section id="testimonials" class="third-colored-section">
+
+      <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <h2 class="testimonial-text">I've come to find a intelligent titan. I'm just going to borrow some of their power ;) .</h2>
+            <img class="testimonial-image" src="images/eren_avatar.jpg" alt="eren">
+            <em>Eren Yeager, Wall Rose</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">E-ereh!</h2>
+            <img class="testimonial-image" src="images/mikasa_avatar.jpg" alt="mikasa" />
+            <em>Mikasa Ackermann, Wall Rose</em>
+          </div>
+          <div class="carousel-item">
+            <h2 class="testimonial-text">Thanks to this app, I met many titans, but it's not enough, I want more titans!</h2>
+            <img class="testimonial-image" src="images/hange_avatar.jpg" alt="hange">
+            <em>Hange Zoë, Wall Rose</em>
+          </div>
+        </div>
+        <button class="carousel-control-prev testimonial-button" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next testimonial-button" type="button" data-bs-target="#testimonial-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Press -->
+
+    <section id="press" class="third-colored-section">
+      <img class="press-logo" src="images/techcrunch.png" alt="tc-logo" />
+      <img class="press-logo" src="images/tnw.png" alt="tnw-logo" />
+      <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo" />
+      <img class="press-logo" src="images/mashable.png" alt="mashable-logo" />
+    </section>
+
+    <!-- Pricing -->
+
+    <section id="pricing" class="second-colored-section">
+      <h2>A Plan for Every Titan's Types</h2>
+      <p>Simple and affordable price plans for your titan type.</p>
+
+      
+      <div class="row">
+        <div class="pricing-col col-lg-4 col-md-6">
+          <div class="card ">
+            <div class="card-header">
+              <h3>Mindless</h3>
+            </div>
+            <div class="d-flex flex-column card-body">
+              <h2>Free</h2>
+              <p>5 Matches Per Day</p>
+              <p>10 Messages Per Day</p>
+              <p>Unlimited App Usage</p>
+              <p class="space"></p>
+              <hr>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+              </div>
+              </div>
+          </div>
+        </div>
+        
+        <div class="pricing-col col-lg-4 col-md-6">
+          <div class="card">
+            <div class="card-header">
+              <h3>Abnormal</h3>
+            </div>
+            <div class="d-flex flex-column card-body">
+              <h2>$49 / mo</h2>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <p class="space"></p>
+              <hr>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="pricing-col col-lg-4">
+          <div class="card">
+            <div class="card-header">
+              <h3>Intelligent</h3>
+            </div>
+            <div class="d-flex flex-column card-body">
+              <h2>$99 / mo</h2>
+              <p>Pirority Listing</p>
+              <p>Unlimited Matches</p>
+              <p>Unlimited Messages</p>
+              <p>Unlimited App Usage</p>
+              <hr>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </section>
+
+    <!-- Call to Action -->
+
+    <section id="cta" class="first-colored-section">
+      <div class="container-fluid">
+        <h3>Find the True Titan Love, Today!</h3>
+        <button type="button" class="btn btn-dark btn-lg download-button btn2"> <i class="fab fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-outline-light btn-lg download-button"> <i class="fab fa-google-play"></i> Download </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer id="footer" class="second-colored-section">
+      <div class="container-fluid">
+        <i class="fab fa-twitter footer-icon"></i> <i class="fab fa-facebook-f footer-icon"></i> 
+        <i class="fab fa-instagram footer-icon"></i> <i class="fas fa-envelope footer-icon"></i>
+        <p>© Copyright 2018 meeTitan</p>
+      </div>
+    </footer>
+  </body>
+</html>
