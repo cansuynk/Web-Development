@@ -1,25 +1,23 @@
 body{
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 
 h1{  
-    font-family: 'Montserrat', sans-serif;  
-    font-size: 3.5rem;  
+    font-size: 3rem;  
     line-height: 1.5;  
-    font-weight: 900;
+    font-weight: 700;
 }
 
 h2{
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: 900;
-    font-size: 2.5rem;
+    font-weight: 700;
+    font-size: 2rem;
     line-height: 1.5;
 }
 
 h3{
-    font-family: 'Montserrat', sans-serif; 
-    font-weight: 900;
+    font-weight: 700;
     font-size: 1.5rem; 
 }
 
@@ -27,20 +25,42 @@ p{
     color: #8f8f8f;
 }
 
-#title{
+
+/* Sections background color */
+.first-colored-section{
     background-color: #ff4c68;
     color: white;
 }
 
+.second-colored-section{
+    background-color: white;
+}
+
+.third-colored-section{
+    background-color: #ef8172;
+    color: white;
+}
+
 .container-fluid{
-    padding: 1% 15% 0;
+    padding: 7% 25%;
+}
+
+
+/* Title Section */
+
+#title{
+    text-align: left;
+}
+
+#title .container-fluid{
+    padding: 1% 20% 7%;
     overflow: hidden;
 }
 
 /* Navigation Bar */
 
 .navbar{
-    padding: 0 0 4.5rem;
+    padding: 0 0 2rem;
 }
 
 .navbar-brand{
@@ -62,27 +82,29 @@ p{
     margin: 5% 3% 5% 0;
 }
 
-.btn2:hover{
-    background-color: white;
-    color: black;
+/* Title image */
+.title-img-div{
+    position: relative;
 }
 
-/* Title image */
-
 .title-image{
-    width: 50%;
+    width: 60%;
     transform: rotate(25deg);
-    margin-left: 5rem;
-    margin-top: 3rem;
+    position: absolute;
+    right: 30%;
 }
 
 
 /* Feature Section */
-
 #features{
-    text-align: center;
     line-height: 2;
-    padding: 3rem 0 3rem;
+    margin-top: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+#features .container-fluid{
+    padding: 1% 20% 7%;
 }
 
 .features-icon{
@@ -100,14 +122,6 @@ p{
 
 
 /* Testimonial Section */
-
-#testimonials{
-    
-    text-align: center;
-    background-color: #ef8172;
-    color: white;
-}
-
 .testimonial-image{
     width: 10%;
     border-radius: 100%;
@@ -126,8 +140,6 @@ p{
 /* Press Section */
 
 #press{
-   background-color: #ef8172;
-   text-align: center;
    padding-bottom: 3%;
    padding-top: 0;
 }
@@ -139,7 +151,48 @@ p{
 
 /* Price Section */
 
-.price-card{
+#pricing{
+    padding: 100px;
+}
 
-  
+#pricing .btn:hover{
+    background-color: white;
+    color: black;
+}
+
+.pricing-col{
+    padding: 3% 2%;
+}
+
+.card{
+    height: 100%;
+}
+
+.space{
+    margin-top: 1.5rem;
+}
+
+/* Call to Action Section */
+#cta h3{
+    font-size: 2.5rem;
+}
+
+#cta .btn{
+    margin-top: 10%;
+}
+
+/* Footer Section */
+.footer-icon{
+    padding: 1rem 1rem 1.5rem;
+}
+
+@media (max-width: 1000px) {
+    .title-image{
+        position: static;
+        transform: rotate(0);
+    }
+
+    #title{
+        text-align: center;
+    }
 }

@@ -28,7 +28,7 @@
   </head>
 
   <body>
-    <section id="title">
+    <section id="title" class="first-colored-section">
       <div class="container-fluid">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
@@ -47,13 +47,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" href="">Contact</a>
+                <a class="nav-link" href="#footer">Contact</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Pricing</a>
+                <a class="nav-link" href="#pricing">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="">Download</a>
+                <a class="nav-link" href="#cta">Download</a>
               </li>
             </ul>
           </div>
@@ -65,7 +65,7 @@
             <h1>Meet new and interesting dogs nearby.</h1>
             <button
               type="button"
-              class="btn btn-dark btn-lg download-button btn2"
+              class="btn btn-secondary btn-lg download-button btn2"
             >
               <i class="fab fa-apple"></i> Download
             </button>
@@ -76,7 +76,7 @@
               <i class="fab fa-google-play"></i> Download
             </button>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 title-img-div">
             <img
               class="title-image"
               src="images/iphone6.png"
@@ -89,7 +89,7 @@
 
     <!-- Features -->
 
-    <section id="features">
+    <section id="features" class="second-colored-section">
       <div class="container-fluid">
       <div class="row">
         <div class="col-lg-4 col-md features-col">
@@ -113,7 +113,7 @@
 
     <!-- Testimonials -->
 
-    <section id="testimonials">
+    <section id="testimonials" class="third-colored-section">
 
       <div id="testimonial-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
         <div class="carousel-inner">
@@ -142,7 +142,7 @@
 
     <!-- Press -->
 
-    <section id="press">
+    <section id="press" class="third-colored-section">
       <img class="press-logo" src="images/techcrunch.png" alt="tc-logo" />
       <img class="press-logo" src="images/tnw.png" alt="tnw-logo" />
       <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo" />
@@ -151,54 +151,65 @@
 
     <!-- Pricing -->
 
-    <section id="pricing">
+    <section id="pricing" class="second-colored-section">
       <h2>A Plan for Every Dog's Needs</h2>
       <p>Simple and affordable price plans for your and your dog.</p>
 
       
       <div class="row">
-        <div class="col-lg-4 col-md-6">
+        <div class="pricing-col col-lg-4 col-md-6">
           <div class="card ">
             <div class="card-header">
               <h3>Chihuahua</h3>
             </div>
-            <div class="card-body">
+            <div class="d-flex flex-column card-body">
               <h2>Free</h2>
               <p>5 Matches Per Day</p>
               <p>10 Messages Per Day</p>
               <p>Unlimited App Usage</p>
-              <button type="button">Sign Up</button>
-            </div>
+              <p class="space"></p>
+              <hr>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+              </div>
+              </div>
           </div>
         </div>
         
-        <div class="col-lg-4 col-md-6">
+        <div class="pricing-col col-lg-4 col-md-6">
           <div class="card">
             <div class="card-header">
               <h3>Labrador</h3>
             </div>
-            <div class="card-body">
+            <div class="d-flex flex-column card-body">
               <h2>$49 / mo</h2>
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
-              <button type="button">Sign Up</button>
+              <p class="space"></p>
+              <hr>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+              </div>
             </div>
           </div>
         </div>
         
-        <div class="col-lg-4">
+        <div class="pricing-col col-lg-4">
           <div class="card">
             <div class="card-header">
               <h3>Mastiff</h3>
             </div>
-            <div class="card-body">
+            <div class="d-flex flex-column card-body">
               <h2>$99 / mo</h2>
               <p>Pirority Listing</p>
               <p>Unlimited Matches</p>
               <p>Unlimited Messages</p>
               <p>Unlimited App Usage</p>
-              <button type="button">Sign Up</button>
+              <hr>
+              <div class="d-grid gap-2">
+                <button type="button" class="btn btn-dark btn-lg btn-block">Sign Up</button>
+              </div>
             </div>
           </div>
         </div>
@@ -208,16 +219,22 @@
 
     <!-- Call to Action -->
 
-    <section id="cta">
-      <h3>Find the True Love of Your Dog's Life Today.</h3>
-      <button type="button">Download</button>
-      <button type="button">Download</button>
+    <section id="cta" class="first-colored-section">
+      <div class="container-fluid">
+        <h3>Find the True Love of Your Dog's Life Today.</h3>
+        <button type="button" class="btn btn-secondary btn-lg download-button"> <i class="fab fa-apple"></i> Download</button>
+        <button type="button" class="btn btn-light btn-lg download-button"> <i class="fab fa-google-play"></i> Download </button>
+      </div>
     </section>
 
     <!-- Footer -->
 
-    <footer id="footer">
-      <p>© Copyright 2018 TinDog</p>
+    <footer id="footer" class="second-colored-section">
+      <div class="container-fluid">
+        <i class="fab fa-twitter footer-icon"></i> <i class="fab fa-facebook-f footer-icon"></i> 
+        <i class="fab fa-instagram footer-icon"></i> <i class="fas fa-envelope footer-icon"></i>
+        <p>© Copyright 2018 TinDog</p>
+      </div>
     </footer>
   </body>
 </html>
