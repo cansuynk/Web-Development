@@ -11,6 +11,11 @@ h1 {
 
 }
 
+p {
+  font-size: 3rem;
+  color: #EAE7C6;
+}
+
 footer {
   color: #BCCC9A;
   font-family: sans-serif;
