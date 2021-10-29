@@ -19,6 +19,10 @@ Click to visit the design --> https://www.canva.com/design/DAEuHqKJb6Y/Q6hGWaMyJ
 
 Click to visit the website --> https://dicee-roll.web.app/
 
+## Drum Kit
+
+Click to visit the website --> https://drum-music-kit.web.app/
+
 - - - -
 
 ## Turn Google Sheets into a REST API and Use it with a React Application
