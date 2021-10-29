@@ -2,7 +2,7 @@
 Web development studies
 
 
-## My Personal Website
+## Personal Website
 
 Click to visit the website --> https://personal-website-cy.web.app/
 
