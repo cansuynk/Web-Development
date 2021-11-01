@@ -20,24 +20,24 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
 
 <body class="text-center">
 
     <main class="form-signin">
-        <form>
+        <form action="/" method="post">
             <img class="mb-4" src="images/cansu.png" alt="cansuLogo">
             <h1 class="h3 mb-3 fw-normal">Signup to My Newsletter!</h1>
 
             <div class="form-floating">
-                <input type="text" class="form-control top" placeholder="First name">
+                <input type="text" name="name" class="form-control top" placeholder="First name">
             </div>
             <div class="form-floating">
-                <input type="text" class="form-control middle" placeholder="Last Name">
+                <input type="text" name="lastName" class="form-control middle" placeholder="Last Name">
             </div>
             <div class="form-floating">
-                <input type="email" class="form-control bottom" placeholder="Email">
+                <input type="email" name="email" class="form-control bottom" placeholder="Email">
             </div>
 
             <button class="btn btn-lg btn-primary btn-block" type="submit">Sign me Up!</button>
