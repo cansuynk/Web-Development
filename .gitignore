@@ -32,3 +32,9 @@ yarn-error.log*
 /.vscode
 */Bootstrap-installation
 /Bootstrap-installation
+
+# Dependency directories
+node_modules/
+
+# Optional npm cache directory
+.npm
