@@ -47,6 +47,10 @@ body {
   border-top-right-radius: 0;
 }
 
+.failure{
+  background-color: rgb(255, 217, 0);
+}
+
 .footer{
   margin-top: 5rem;
 }
