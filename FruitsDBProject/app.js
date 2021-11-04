@@ -9,9 +9,14 @@ const databaseName = "fruitsDB";
 mongoose.connect(uri + "/" + databaseName, {useNewUrlParser: true});
 
 //create new schema
+//Add validaiton 
 const fruitSchema = new mongoose.Schema({
-    name: String,
-    rating: Number,
+    name:{ type: String, required: [true, "Please check your data entryi no name specified!"]},
+    rating: {
+        type: Number,
+        min: 1,
+        max: 10
+    },
     review: String
 });
 
@@ -20,8 +25,7 @@ const Fruit = mongoose.model("Fruit", fruitSchema);
 
 //Create document from model
 const fruit = new Fruit ({
-    name: "Apple",
-    rating: 7,
+    rating: 10,
     review: "Pretty solid as a fruit."
 });
 
@@ -29,14 +33,24 @@ const fruit = new Fruit ({
 
 const personSchema = new mongoose.Schema({
     name: String,
-    age: Number
+    age: Number,
+    favouriteFruit: fruitSchema
 });
 
 const Person = mongoose.model("Person", personSchema);
 
+const pineapple = new Fruit ({
+    name: "Pineapple",
+    rating: 9,
+    review: "Great fruit."
+});
+
+//pineapple.save();
+
 const person = new Person ({
-    name: "Angela",
-    age: 35
+    name: "Amy",
+    age: 12,
+    favouriteFruit: pineapple
 });
 
 person.save();
@@ -60,6 +74,7 @@ const banana = new Fruit ({
 });
 
 //insert an array
+/*
 Fruit.insertMany([kiwi, orange, banana], function(err){
     if(err){
         console.log(err);
@@ -67,4 +82,58 @@ Fruit.insertMany([kiwi, orange, banana], function(err){
         console.log("Succesfully saved all fruits to fruitsDB");
     }
 
+});
+*/
+/*
+//query
+Fruit.find(function(err, fruits){
+    if(err){
+        console.log(err);
+    }else{
+        //mongoose.connection.close();
+        setTimeout(function() { mongoose.connection.close();}, 1000);
+        fruits.forEach(element => {
+            console.log(element.name);
+        });
+        console.log(fruits);
+    }
+});
+*/
+
+/*
+Fruit.updateOne({_id: "61844ebcdea2d76bbe0a7f3f"}, {name: "Peach"}, function(err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log("Succesfully updated document.");
+    }
+});
+*/
+/*
+Fruit.deleteOne({_id: "61844eec857d6a615ca8c920"}, function(err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log("Succesfully deleted document.");
+    }
+});
+*/
+
+/*
+Person.deleteMany({name: "Angela"}, function(err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log("Succesfully deleted from all documents.");
+    }
+});
+*/
+
+
+Person.updateOne({_name: "Angela"}, {favouriteFruit: kiwi}, function(err){
+    if(err){
+        console.log(err);
+    }else{
+        console.log("Succesfully updated document.");
+    }
 });
