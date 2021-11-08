@@ -12,6 +12,7 @@ Web development studies
 | <h4> Simon Game </h4>             | https://play-simon-game.web.app/                                                               |
 | <h4> Newsletter Signup </h4>      | https://signup-newsletter-list.herokuapp.com/                                                  |
 | <h4> Very Simple Todo List </h4>  | https://very-simple-todo-list.herokuapp.com/                                                   |
+| <h4> Simple Blog Website </h4>    | https://simple-blog-website.herokuapp.com/                                                     |
 
 
 - - - -
