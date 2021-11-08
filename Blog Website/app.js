@@ -4,6 +4,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require('lodash');
+const mongoose = require('mongoose');
 
 const port = 3000;
 
@@ -17,14 +18,29 @@ app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
-const posts = [];
+
+//database connection
+const databaseName = "blogDB"
+const uri = "mongodb://localhost:27017/"
+mongoose.connect(uri + databaseName, {useNewUrlParser: true})
+
+const postSchema = new mongoose.Schema({
+  title: String,
+  content: String
+});
+
+const Post = mongoose.model("Post", postSchema);
 
 /**Home Page */
 app.get("/", function(req, res){
-  res.render('home', 
-  {
-    Content: homeStartingContent,
-    posts: posts
+  
+  Post.find({}, function(err, posts){
+    if (foundItems.length === 0){
+      console.log(err);
+      res.redirect("/");
+    }else{
+      res.render('home', { Content: homeStartingContent, posts: posts });
+    }
   });
   
 });
@@ -48,21 +64,38 @@ app.get("/compose", function(req, res){
 });
 
 app.post("/compose", function(req,res){
-  const post = {
+  
+  const post = new Post({
     title: req.body.composeTitle,
     content: req.body.composeBody
-  };
+  });
 
-  posts.push(post);
-  res.redirect("/");
+  post.save(function(err){
+    if (!err){
+      res.redirect("/");
+    }
+  });
 });
 
 
 /**Posts Pages */
-app.get("/posts/:post", function(req, res){
+app.get("/posts/:postId", function(req, res){
 
+  const postId = req.params.postId;
+  
+  Post.findOne({_id: postId}, function(err, post){
+    if(!err){
+      if(!post){
+        res.redirect("/");
+      }else{
+        res.render("post", {Title: post.title, Content: post.content});
+      }
+    }
+  });
+
+  /*
   posts.forEach(element => {
-    if( _.lowerCase(element.title) === _.lowerCase(req.params.post)){
+    if( _.lowerCase(element.title) === _.lowerCase()){
       res.render("post", 
       {
         Title: element.title,
@@ -70,7 +103,8 @@ app.get("/posts/:post", function(req, res){
       });
     }
   });
-  
+  */
+
 });
 
 app.listen(port, function() {
