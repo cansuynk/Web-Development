@@ -36,7 +36,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 const databaseName = "userDB";
-const uri = "mongodb://localhost:27017/";
+const uri = "mongodb+srv://admin-cansu:test123@cluster0.4jkda.mongodb.net/";
 mongoose.connect(uri + databaseName, {useNewUrlParser: true});
 
 
@@ -244,7 +244,11 @@ app.post("/login", function(req, res){
 });
 
 
-let port = 3000;
-app.listen(port, function(){
-    console.log("Server started on port " + port);
+let port = process.env.PORT || 3000;
+if (port === null || port === ""){
+    port = 3000;
+}
+
+app.listen(port, function() {
+  console.log("Server started on port " + port);
 });
