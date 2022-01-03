@@ -1,5 +1,5 @@
 # Web-Development
-Web development studies
+I share my web development studies in this repo. Technologies that I use are mentioned in the about section. You can visit the websites of the projects.
 
 
 | <h3> Project Name </h3>           | <h3> Click Website Link </h3>                                                                  |
@@ -13,6 +13,7 @@ Web development studies
 | <h4> Newsletter Signup </h4>      | https://signup-newsletter-list.herokuapp.com/                                                  |
 | <h4> Very Simple Todo List </h4>  | https://very-simple-todo-list.herokuapp.com/                                                   |
 | <h4> Simple Blog Website </h4>    | https://simple-blog-website.herokuapp.com/                                                     |
+| <h4> Share Your Secrets </h4>     | https://share-secrets-website.herokuapp.com/                                                   |
 
 
 - - - -
